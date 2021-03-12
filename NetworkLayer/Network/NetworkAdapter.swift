@@ -82,18 +82,18 @@ struct TaskAdapter: NetworkAdapter {
         switch task {
         case .simple:
             return request
-        case let .urlEncodeEncodable(encodable):
+        case let .urlEncode(encodable: encodable):
             let encodableObject = AnyEncodableWrapper(encodable)
             return try Result<URLRequest, Error> { try URLEncoder().encode(encodableObject, with: request) }
                 .mapError { NetworkError.buildRequestFailed(reason: .urlEncodeFail(error: $0)) }.get()
 
-        case let .jsonEncodeEncodable(encodable):
+        case let .jsonEncode(encodable: encodable):
             let encodableObject = AnyEncodableWrapper(encodable)
             request.httpBody = try Result<Data, Error> { try JSONEncoder().encode(encodableObject) }
                 .mapError { NetworkError.buildRequestFailed(reason: .jsonEncodeFail(error: $0)) }.get()
             return request
             
-        case let .jsonEncodeDictionary(dictionary, encoder: encoder):
+        case let .jsonEncode(dictionary: dictionary, encoder: encoder):
             return try Result<URLRequest, Error> { try encoder.encode(urlRequest: request, withParameters: dictionary) }
                 .mapError { NetworkError.buildRequestFailed(reason: .jsonEncodeFail(error: $0)) }.get()
         }
