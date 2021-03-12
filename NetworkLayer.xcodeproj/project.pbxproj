@@ -14,6 +14,10 @@
 		50B5FF2B25FBA15F0052FDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B5FF2925FBA15F0052FDB4 /* LaunchScreen.storyboard */; };
 		50B5FF3625FBA15F0052FDB4 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF3525FBA15F0052FDB4 /* NetworkLayerTests.swift */; };
 		50B5FF4125FBA15F0052FDB4 /* NetworkLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF4025FBA15F0052FDB4 /* NetworkLayerUITests.swift */; };
+		50B5FF5925FBA7930052FDB4 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF5825FBA7930052FDB4 /* NetworkSession.swift */; };
+		50B5FF6125FBA8010052FDB4 /* NetworkCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */; };
+		50B5FF6725FBA8350052FDB4 /* AlamofireNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF6625FBA8350052FDB4 /* AlamofireNetworkSession.swift */; };
+		50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF7125FBA94C0052FDB4 /* NativeNetworkSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		50B5FF3C25FBA15F0052FDB4 /* NetworkLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B5FF4025FBA15F0052FDB4 /* NetworkLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerUITests.swift; sourceTree = "<group>"; };
 		50B5FF4225FBA15F0052FDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B5FF5825FBA7930052FDB4 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCancelable.swift; sourceTree = "<group>"; };
+		50B5FF6625FBA8350052FDB4 /* AlamofireNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkSession.swift; sourceTree = "<group>"; };
+		50B5FF7125FBA94C0052FDB4 /* NativeNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				50B5FF2725FBA15F0052FDB4 /* Assets.xcassets */,
 				50B5FF2925FBA15F0052FDB4 /* LaunchScreen.storyboard */,
 				50B5FF2C25FBA15F0052FDB4 /* Info.plist */,
+				50B5FF5725FBA7160052FDB4 /* Network */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -123,6 +132,25 @@
 				50B5FF4225FBA15F0052FDB4 /* Info.plist */,
 			);
 			path = NetworkLayerUITests;
+			sourceTree = "<group>";
+		};
+		50B5FF5725FBA7160052FDB4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				50B5FF6525FBA8210052FDB4 /* Sessions */,
+				50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		50B5FF6525FBA8210052FDB4 /* Sessions */ = {
+			isa = PBXGroup;
+			children = (
+				50B5FF5825FBA7930052FDB4 /* NetworkSession.swift */,
+				50B5FF6625FBA8350052FDB4 /* AlamofireNetworkSession.swift */,
+				50B5FF7125FBA94C0052FDB4 /* NativeNetworkSession.swift */,
+			);
+			path = Sessions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B5FF6725FBA8350052FDB4 /* AlamofireNetworkSession.swift in Sources */,
+				50B5FF6125FBA8010052FDB4 /* NetworkCancelable.swift in Sources */,
 				50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */,
+				50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */,
+				50B5FF5925FBA7930052FDB4 /* NetworkSession.swift in Sources */,
 				50B5FF1F25FBA15E0052FDB4 /* AppDelegate.swift in Sources */,
 				50B5FF2125FBA15E0052FDB4 /* SceneDelegate.swift in Sources */,
 			);
