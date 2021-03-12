@@ -18,6 +18,7 @@
 		50B5FF6125FBA8010052FDB4 /* NetworkCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */; };
 		50B5FF6725FBA8350052FDB4 /* AlamofireNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF6625FBA8350052FDB4 /* AlamofireNetworkSession.swift */; };
 		50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF7125FBA94C0052FDB4 /* NativeNetworkSession.swift */; };
+		50B5FF8025FBAA850052FDB4 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCancelable.swift; sourceTree = "<group>"; };
 		50B5FF6625FBA8350052FDB4 /* AlamofireNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkSession.swift; sourceTree = "<group>"; };
 		50B5FF7125FBA94C0052FDB4 /* NativeNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeNetworkSession.swift; sourceTree = "<group>"; };
+		50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				50B5FF6525FBA8210052FDB4 /* Sessions */,
+				50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */,
 				50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */,
 			);
 			path = Network;
@@ -284,6 +287,7 @@
 			files = (
 				50B5FF6725FBA8350052FDB4 /* AlamofireNetworkSession.swift in Sources */,
 				50B5FF6125FBA8010052FDB4 /* NetworkCancelable.swift in Sources */,
+				50B5FF8025FBAA850052FDB4 /* NetworkAdapter.swift in Sources */,
 				50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */,
 				50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */,
 				50B5FF5925FBA7930052FDB4 /* NetworkSession.swift in Sources */,
