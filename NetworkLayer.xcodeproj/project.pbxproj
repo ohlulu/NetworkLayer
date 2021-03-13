@@ -104,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50780A6125FCC388008551BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */,
+				50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */,
+				50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */,
+				50780A4825FCC052008551BC /* NetworkDesision.swift */,
+				50780A4D25FCC099008551BC /* NetworkPlugin.swift */,
+				50780A5725FCC1C1008551BC /* NetworkLogger.swift */,
+				50B5FFAB25FBB0A60052FDB4 /* ParameterEncoder.swift */,
+				50B5FFB025FBB0EA0052FDB4 /* URLEncoder.swift */,
+				50B5FFA125FBAE040052FDB4 /* NetworkError.swift */,
+				50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		50B5FF1225FBA15E0052FDB4 = {
 			isa = PBXGroup;
 			children = (
@@ -159,19 +176,10 @@
 		50B5FF5725FBA7160052FDB4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				50B5FF6525FBA8210052FDB4 /* Sessions */,
-				50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */,
-				50B5FFB025FBB0EA0052FDB4 /* URLEncoder.swift */,
-				50B5FFAB25FBB0A60052FDB4 /* ParameterEncoder.swift */,
-				50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */,
-				50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */,
-				50B5FFA125FBAE040052FDB4 /* NetworkError.swift */,
-				50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */,
-				50780A4825FCC052008551BC /* NetworkDesision.swift */,
-				50780A4D25FCC099008551BC /* NetworkPlugin.swift */,
-				50780A5C25FCC257008551BC /* NetworkResponse.swift */,
-				50780A5725FCC1C1008551BC /* NetworkLogger.swift */,
 				50780A5225FCC0CD008551BC /* NetworkRequest.swift */,
+				50780A5C25FCC257008551BC /* NetworkResponse.swift */,
+				50780A6125FCC388008551BC /* Components */,
+				50B5FF6525FBA8210052FDB4 /* Sessions */,
 			);
 			path = Network;
 			sourceTree = "<group>";
