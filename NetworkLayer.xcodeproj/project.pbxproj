@@ -11,6 +11,7 @@
 		50780A4E25FCC099008551BC /* NetworkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50780A4D25FCC099008551BC /* NetworkPlugin.swift */; };
 		50780A5325FCC0CD008551BC /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50780A5225FCC0CD008551BC /* NetworkRequest.swift */; };
 		50780A5825FCC1C1008551BC /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50780A5725FCC1C1008551BC /* NetworkLogger.swift */; };
+		50780A5D25FCC257008551BC /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50780A5C25FCC257008551BC /* NetworkResponse.swift */; };
 		50B5FF1F25FBA15E0052FDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF1E25FBA15E0052FDB4 /* AppDelegate.swift */; };
 		50B5FF2125FBA15E0052FDB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF2025FBA15E0052FDB4 /* SceneDelegate.swift */; };
 		50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF2225FBA15E0052FDB4 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		50780A4D25FCC099008551BC /* NetworkPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlugin.swift; sourceTree = "<group>"; };
 		50780A5225FCC0CD008551BC /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		50780A5725FCC1C1008551BC /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		50780A5C25FCC257008551BC /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		50B5FF1B25FBA15E0052FDB4 /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B5FF1E25FBA15E0052FDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B5FF2025FBA15E0052FDB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */,
 				50780A4825FCC052008551BC /* NetworkDesision.swift */,
 				50780A4D25FCC099008551BC /* NetworkPlugin.swift */,
+				50780A5C25FCC257008551BC /* NetworkResponse.swift */,
 				50780A5725FCC1C1008551BC /* NetworkLogger.swift */,
 				50780A5225FCC0CD008551BC /* NetworkRequest.swift */,
 			);
@@ -317,6 +320,7 @@
 				50780A5325FCC0CD008551BC /* NetworkRequest.swift in Sources */,
 				50B5FF8025FBAA850052FDB4 /* NetworkAdapter.swift in Sources */,
 				50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */,
+				50780A5D25FCC257008551BC /* NetworkResponse.swift in Sources */,
 				50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */,
 				50780A4E25FCC099008551BC /* NetworkPlugin.swift in Sources */,
 				50B5FF9D25FBAD960052FDB4 /* HTTPMethod.swift in Sources */,
