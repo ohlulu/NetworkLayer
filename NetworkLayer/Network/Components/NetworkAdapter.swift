@@ -96,7 +96,6 @@ struct TaskAdapter: NetworkAdapter {
         case let .bodyWithParameters(dictionary, encoder: encoder):
             return try Result<URLRequest, Error> { try encoder.encode(urlRequest: request, withParameters: dictionary) }
                 .mapError { NetworkError.buildRequestFailed(reason: .jsonEncodeFail(error: $0)) }.get()
-            
         }
     }
 }
