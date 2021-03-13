@@ -22,6 +22,8 @@
 		50B5FF9D25FBAD960052FDB4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */; };
 		50B5FFA225FBAE040052FDB4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FFA125FBAE040052FDB4 /* NetworkError.swift */; };
 		50B5FFA725FBAF350052FDB4 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */; };
+		50B5FFAC25FBB0A60052FDB4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FFAB25FBB0A60052FDB4 /* ParameterEncoder.swift */; };
+		50B5FFB125FBB0EA0052FDB4 /* URLEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FFB025FBB0EA0052FDB4 /* URLEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		50B5FFA125FBAE040052FDB4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		50B5FFAB25FBB0A60052FDB4 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		50B5FFB025FBB0EA0052FDB4 /* URLEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			children = (
 				50B5FF6525FBA8210052FDB4 /* Sessions */,
 				50B5FF7F25FBAA850052FDB4 /* NetworkAdapter.swift */,
+				50B5FFB025FBB0EA0052FDB4 /* URLEncoder.swift */,
+				50B5FFAB25FBB0A60052FDB4 /* ParameterEncoder.swift */,
 				50B5FF6025FBA8010052FDB4 /* NetworkCancelable.swift */,
 				50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */,
 				50B5FFA125FBAE040052FDB4 /* NetworkError.swift */,
@@ -300,6 +306,8 @@
 				50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */,
 				50B5FF7225FBA94C0052FDB4 /* NativeNetworkSession.swift in Sources */,
 				50B5FF9D25FBAD960052FDB4 /* HTTPMethod.swift in Sources */,
+				50B5FFAC25FBB0A60052FDB4 /* ParameterEncoder.swift in Sources */,
+				50B5FFB125FBB0EA0052FDB4 /* URLEncoder.swift in Sources */,
 				50B5FF5925FBA7930052FDB4 /* NetworkSession.swift in Sources */,
 				50B5FF1F25FBA15E0052FDB4 /* AppDelegate.swift in Sources */,
 				50B5FF2125FBA15E0052FDB4 /* SceneDelegate.swift in Sources */,

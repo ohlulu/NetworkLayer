@@ -18,11 +18,11 @@ public enum NetworkTask {
     case simple
     
     /// A request URL set with `Encodable` object.
-    case urlEncode(encodable: Encodable)
+    case urlParameters(Encodable)
 
     /// A request body set with `Encodable` object.
-    case jsonEncode(encodable: Encodable)
+    case jsonEncodable(Encodable)
 
     /// A requests body set with `parameters`, use `encoder`.
-    case jsonEncode(dictionary: [String: Any], encoder: ParameterEncoder)
+    case bodyWithParameters([String: Any], encoder: ParameterEncoder)
 }
