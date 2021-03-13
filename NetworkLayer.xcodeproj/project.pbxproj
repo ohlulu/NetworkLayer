@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50780A4925FCC052008551BC /* NetworkDesision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50780A4825FCC052008551BC /* NetworkDesision.swift */; };
 		50B5FF1F25FBA15E0052FDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF1E25FBA15E0052FDB4 /* AppDelegate.swift */; };
 		50B5FF2125FBA15E0052FDB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF2025FBA15E0052FDB4 /* SceneDelegate.swift */; };
 		50B5FF2325FBA15E0052FDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B5FF2225FBA15E0052FDB4 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50780A4825FCC052008551BC /* NetworkDesision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDesision.swift; sourceTree = "<group>"; };
 		50B5FF1B25FBA15E0052FDB4 /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B5FF1E25FBA15E0052FDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B5FF2025FBA15E0052FDB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				50B5FF9C25FBAD960052FDB4 /* HTTPMethod.swift */,
 				50B5FFA125FBAE040052FDB4 /* NetworkError.swift */,
 				50B5FFA625FBAF350052FDB4 /* NetworkTask.swift */,
+				50780A4825FCC052008551BC /* NetworkDesision.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				50B5FFB125FBB0EA0052FDB4 /* URLEncoder.swift in Sources */,
 				50B5FF5925FBA7930052FDB4 /* NetworkSession.swift in Sources */,
 				50B5FF1F25FBA15E0052FDB4 /* AppDelegate.swift in Sources */,
+				50780A4925FCC052008551BC /* NetworkDesision.swift in Sources */,
 				50B5FF2125FBA15E0052FDB4 /* SceneDelegate.swift in Sources */,
 				50B5FFA225FBAE040052FDB4 /* NetworkError.swift in Sources */,
 				50B5FFA725FBAF350052FDB4 /* NetworkTask.swift in Sources */,
