@@ -60,18 +60,6 @@ class StatusCodeDecision: NetworkDecision {
     }
 }
 
-/// Cookie Decision
-class CookieDecision: NetworkDecision {
-    func shouldApply<R>(request: R, data: Data, response: HTTPURLResponse) -> Bool where R: NetworkRequest {
-        true
-    }
-
-    func apply<R>(request: R, data: Data, response: HTTPURLResponse, action: @escaping (NetworkDecisionAction<R>) -> Void) where R: NetworkRequest {
-        CookieManager.saveCookieIfNeeded(from: response)
-        action(.next(data, response))
-    }
-}
-
 /// If failed, retry.
 class RetryDecision: NetworkDecision {
 
@@ -99,33 +87,36 @@ class RetryDecision: NetworkDecision {
     }
 }
 
-/// Detect `APIError` before `DecodeDecision`
-class DetectAPIErrorDecision: NetworkDecision {
+/**
+ If you define `APIError`, you can open it.
+ /// Detect `APIError` before `DecodeDecision`
+ class DetectAPIErrorDecision: NetworkDecision {
 
-    let decoder: JSONDecoder
+     let decoder: JSONDecoder
 
-    init(decoder: JSONDecoder = JSONDecoder()) {
-        self.decoder = decoder
-    }
+     init(decoder: JSONDecoder = JSONDecoder()) {
+         self.decoder = decoder
+     }
 
-    public func shouldApply<R: NetworkRequest>(request: R, data: Data, response: HTTPURLResponse) -> Bool {
-        true
-    }
+     public func shouldApply<R: NetworkRequest>(request: R, data: Data, response: HTTPURLResponse) -> Bool {
+         true
+     }
 
-    public func apply<R: NetworkRequest>(
-        request: R,
-        data: Data,
-        response: HTTPURLResponse,
-        action: @escaping (NetworkDecisionAction<R>) -> Void
-    ) {
-        if let wrapperErrorEntity = try? decoder.decode(APIErrorWrapper.self, from: data) {
-            let errorEntity = wrapperErrorEntity.error
-            action(.stop(NetworkError.apiError(error: errorEntity)))
-        } else {
-            action(.next(data, response))
-        }
-    }
-}
+     public func apply<R: NetworkRequest>(
+         request: R,
+         data: Data,
+         response: HTTPURLResponse,
+         action: @escaping (NetworkDecisionAction<R>) -> Void
+     ) {
+         if let wrapperErrorEntity = try? decoder.decode(APIErrorWrapper.self, from: data) {
+             let errorEntity = wrapperErrorEntity.error
+             action(.stop(NetworkError.apiError(error: errorEntity)))
+         } else {
+             action(.next(data, response))
+         }
+     }
+ }
+ */
 
 /// Last decision, decode data to a `Request.Entity` object.
 class DecodeDecision: NetworkDecision {

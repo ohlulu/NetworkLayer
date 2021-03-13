@@ -47,9 +47,7 @@ public extension NetworkRequest {
     var decisions: [NetworkDecision] {
         return [
             StatusCodeDecision(valid: 200 ..< 399),
-            CookieDecision(),
             RetryDecision(retryCount: 2),
-            DetectAPIErrorDecision(),
             DecodeDecision()
         ]
     }

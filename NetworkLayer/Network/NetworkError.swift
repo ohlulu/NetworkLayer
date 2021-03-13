@@ -153,11 +153,4 @@ public extension NetworkError {
         }
         return false
     }
-
-    var isBuildRequestMethodNonsupport: Bool {
-        if case .buildRequestFailed(.methodNonsupport) = self {
-            return true
-        }
-        return false
-    }
 }
